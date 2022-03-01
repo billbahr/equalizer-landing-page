@@ -1,0 +1,27 @@
+/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+:root {
+    --black: #191826;  /* black text */
+    --white: #FCFAF9;  /* white text */
+    --orangebg: #FA7453;  /* feature background */
+
+    --sans: "IBM Plex Sans", sans-serif;
+}
+/* border box model: https://css-tricks.com/box-sizing/ */
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--sans);
+  background-color: url(../images/bg-main-desktop.png);
+  color: var(--black);
+}
+h1, h2, h3 {
+  margin: 0;
+}
