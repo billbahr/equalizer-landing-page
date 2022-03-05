@@ -14,6 +14,8 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-position-x: -12rem;
+    background-position-y: -20rem;
 }
 *,
 *::before,
@@ -25,11 +27,21 @@ body {
   margin: 0;
   font-family: var(--sans);
   color: var(--black);
-  background: url(../images/bg-pattern-1.svg) top right no-repeat fixed;
-  background-size: 240px 240px;
 }
 h1, h2, h3 {
   margin: 0;
+}
+header::before {
+  content: "";
+  width: 75%;
+  height: 50%;
+  background-image: url(../images/bg-pattern-1.svg);
+  background-repeat: no-repeat;
+  background-size: 160px 240px;
+  background-position: right top;
+  z-index: -1;
+  position: absolute;
+
 }
 .text-hide { 
   border: 0;
