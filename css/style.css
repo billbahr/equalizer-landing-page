@@ -14,7 +14,6 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-position-x: -12rem;
     background-position-y: -20rem;
 }
 *,
@@ -23,7 +22,6 @@ html {
     box-sizing: inherit;
 }
 body {
-  padding: 2rem 5rem;
   margin: 0;
   font-family: var(--sans);
   color: var(--black);
@@ -31,17 +29,23 @@ body {
 h1, h2, h3 {
   margin: 0;
 }
-header::before {
+.logo {
+  padding-top: 3.9rem;
+}
+.full-page {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.full-page::before {
   content: "";
   width: 75%;
   height: 50%;
   background-image: url(../images/bg-pattern-1.svg);
   background-repeat: no-repeat;
-  background-size: 160px 240px;
-  background-position: right top;
+  background-size: 312px 468px;
+  background-position: right 40rem top -3.5rem; 
   z-index: -1;
   position: absolute;
-
 }
 .text-hide { 
   border: 0;
@@ -59,8 +63,7 @@ header::before {
   max-width: 120px;
 }
 .product-info {
-  padding-right: 30rem;
-  margin: 5rem 0;
+  margin: 7.3rem 30rem 0 0;
 }
 .tagline {
   font-size: 5.5rem;
@@ -69,5 +72,5 @@ header::before {
 }
 .product-desc {
   font-size: 1.25rem;
-  margin-right: 2rem;
+  margin: 3rem 2rem 0 0;
 }
